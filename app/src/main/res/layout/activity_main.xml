@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    >
+
+    <Button
+        android:id="@+id/btn_show_adapter_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Show Adapter view"
+        />
+
+    <Button
+        android:id="@+id/btn_show_none_adapter_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Show None Adapter view"
+        app:layout_constraintTop_toBottomOf="@id/btn_show_adapter_view"
+        />
+
+    <RelativeLayout
+        android:id="@+id/fl_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/btn_show_none_adapter_view"
+        app:layout_constraintVertical_weight="1"
+        />
+
+</android.support.constraint.ConstraintLayout>
